@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="62dp"-->
+        <!--android:background="#c2d3">-->
+
+        <!--<android.support.design.widget.TabItem-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Click on your favorite topic"-->
+            <!--/>-->
+        <!--<android.support.design.widget.TabItem-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Click on verse"-->
+            <!--/>-->
+    <!--</android.support.design.widget.TabLayout>-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/hope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hope"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttonstyle"/>
+            <Button
+                android:id="@+id/endtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End time"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttonstyle"/>
+            <Button
+                android:id="@+id/faith"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="faith"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttonstyle"/>
+            <Button
+                android:id="@+id/prayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="prayer"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttonstyle"/>
+            <Button
+                android:id="@+id/religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="faith and religion"
+                android:layout_margin="7dp"
+                android:background="@drawable/buttonstyle"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

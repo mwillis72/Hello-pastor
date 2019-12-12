@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/preacher_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp"
+    card_view:cardCornerRadius="@dimen/cardview_default_radius"
+    card_view:cardElevation="@dimen/cardview_default_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/preacher_details">
+
+        <ImageView
+            android:id="@+id/preacher_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/preacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorAccent"
+            android:layout_toEndOf="@+id/preacher_image"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/preacher_ministry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/preacher_name"
+            android:layout_toEndOf="@+id/preacher_image" />
+
+        <TextView
+            android:id="@+id/preacher_onlinechannel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/preacher_name"
+            android:layout_toEndOf="@+id/preacher_ministry" />
+
+        <TextView
+            android:id="@+id/preacher_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@+id/preacher_ministry"
+            android:layout_toEndOf="@+id/preacher_image"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

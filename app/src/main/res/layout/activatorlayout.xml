@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toobar"
+        android:title="@string/app_name"
+        />
+<!--<com.google.android.gms.ads.AdView-->
+    <!--android:id="@+id/adView1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--ads:adSize="SMART_BANNER"-->
+    <!--ads:adUnitId="@string/ad_unit_id_2"-->
+    <!--/>-->
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginTop="170dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginBottom="120dp"-->
+        <!--android:orientation="vertical">-->
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_weight="0.5"
+                    android:id="@+id/layout_Startbot"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="15dp"
+                    android:clickable="true"
+                    android:focusable="true">
+                    <Button
+                        android:id="@+id/startbot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start_chatbot"
+                        android:background="@drawable/buttonstyle"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="0.5"
+                    android:id="@+id/layoutstartverses"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:clickable="true"
+                    android:layout_margin="15dp"
+                    android:paddingTop="6dp"
+                    android:focusable="true">
+                    <Button
+                        android:id="@+id/startverses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/go_to_growth_plan"
+                        android:background="@drawable/buttonstyle"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="0.5"
+                    android:id="@+id/your_preacher"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:clickable="true"
+                    android:layout_margin="15dp"
+                    android:paddingTop="6dp"
+                    android:focusable="true">
+                    <Button
+                        android:id="@+id/go_to_preacher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/your_preacher"
+                        android:background="@drawable/buttonstyle"/>
+                </RelativeLayout>
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_adplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/cb_start_muted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Start video ads muted" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Refresh Ad" />
+
+        <TextView
+            android:text="Video status: "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/tv_video_status"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+</LinearLayout>

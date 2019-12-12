@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    maven {
+        url  "https://dl.bintray.com/ibm-cloud-sdks/ibm-cloud-sdk-repo"
+    }
+    maven {
+        url 'https://jitpack.io' }
+
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.amal.hellochurch"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 2
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    // solve duplicate classes
+    applicationVariants.all { variant ->
+        variant.getRuntimeConfiguration().exclude group: 'com.google.code.findbugs', module: 'jsr305'
+        variant.getRuntimeConfiguration().exclude group: 'com.google.code.findbugs', module: 'annotations'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+//    implementation 'com.android.support:appcompat-v7:26.0.0'
+//    implementation 'com.android.support:recyclerview-v7:26.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'com.google.android.material:material:1.1.0-alpha10'
+//    implementation 'com.android.support:design:26.0.0'
+    implementation 'com.ibm.watson:assistant:7.0.0'
+    implementation 'com.ibm.watson:text-to-speech:7.0.0'
+    implementation 'com.ibm.watson:speech-to-text:7.0.0'
+    implementation 'com.ibm.watson.developer_cloud:android-sdk:0.5.0'
+    testImplementation 'junit:junit:4.13-beta-3'
+    implementation 'com.google.android.gms:play-services-ads:18.2.0'
+    implementation 'com.github.abdularis:circularimageview:1.0'
+
+}

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hello Church</string>
+    <string name="app_bot">Shalom Chabot</string>
+    <string name="what_s_on_your_mind">Enter your query</string>
+    <string name="start_chatbot">Start Shalom Chabot</string>
+    <string name="go_to_growth_plan">Grow Your Knowledge</string>
+    <string name="your_preacher">Your Preacher</string>
+    <string name="welcome">WELCOME TO HELLO CHURCH!</string>
+    <string name="title_activity_growth_plan">GrowthPlanActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="ad_unit_id">ca-app-pub-9129589479375926/8092140064</string>
+    <string name="ad_unit_id_2">ca-app-pub-9129589479375926/2522266530</string>ca-app-pub-9129589479375926/2522266530
+    <string name="exit">Exit</string>
+    <string name="share_app">Share App</string>
+    <string name="the_potters_house">The Potter\'s House</string>
+    <string name="ad_attribution">Ad</string>
+</resources>
